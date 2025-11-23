@@ -1,7 +1,5 @@
 public class SinglyLinkedList {
-
     private Node head;
-
 
     /**
      * A node in a Singly Linked List has data as well as a pointer to the next node.
