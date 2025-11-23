@@ -1,7 +1,11 @@
 public class SinglyLinkedList {
 
     private Node head;
-    
+
+
+    /**
+     * A node in a Singly Linked List has data as well as a pointer to the next node.
+     */
     private static class Node {
         public Node next;
         public int data;
@@ -80,6 +84,23 @@ public class SinglyLinkedList {
         }
 
         head = prev;
+    }
+
+    /**
+     * Returns the size of this Singly Linked List. 
+     * @return An {@code int} representing the number of elements in this Singly Linked List.
+     */
+    public int size() {
+        int size = 0;
+
+        Node temp = head;
+
+        while (temp != null) {
+            size++;
+            temp = temp.next;
+        }
+
+        return size;
     }
 
     /**
