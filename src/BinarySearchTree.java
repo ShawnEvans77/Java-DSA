@@ -22,10 +22,20 @@ public class BinarySearchTree {
         root = null;
     }
 
+    /**
+     * Insert a value into this Binary Search Tree.
+     * @param key The key to be inserted.
+     */
     public void insert(int key) {
         root = insert(root, key);
     }
 
+    /**
+     * Helper method to allow for inserting a key into the Binary Search Tree using recursion.
+     * @param root
+     * @param key
+     * @return
+     */
     public TreeNode insert(TreeNode root, int key) {
         if (root == null) {
             root = new TreeNode(key);
@@ -40,6 +50,11 @@ public class BinarySearchTree {
         return root;
     }
 
+    /**
+     * Return the subtree rooted at the given node.
+     * @param key
+     * @return
+     */
     public TreeNode search(int key) {
         return search(root, key);
     }

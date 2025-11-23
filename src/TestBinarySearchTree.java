@@ -2,6 +2,8 @@ public class TestBinarySearchTree {
     public static void main(String[] args) {
         BinarySearchTree tree = new BinarySearchTree();
 
+        // Randomly generating a set of numbers to insert into the tree. Uncomment if you want the tree to be huge.
+        
         // int numbers = 20;
         // int max = 5000;
         // int min = -5000;
