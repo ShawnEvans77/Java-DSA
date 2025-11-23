@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class InsertionSort {
     /**
      * It's like a deck of cards.... you shift elements rightward to insert things in its proper place.
@@ -7,7 +5,7 @@ public class InsertionSort {
      * we shift 7 behind the 9
      * [7,9,4,2,1]
      * leave the 9 where it is
-     * we shift 5 behind the 7 and 9
+     * we shift 4 behind the 7 and 9
      * [4,7,9,2,1]
      * we shift the 2. 
      * [2,4,7,9,1]
@@ -28,14 +26,5 @@ public class InsertionSort {
             nums[i+1] = key;
         }
 
-    }
-
-    public static void main(String[] args) {
-        int[] nums = {10,9,8,7,6,5,4,3,2,1};
-
-        System.out.println(Arrays.toString(nums));
-        System.out.println("------------------------------------------------------");
-        insertionSort(nums);
-    }
-    
+    } 
 }

@@ -1,11 +1,7 @@
-import java.util.Arrays;
 public class BubbleSort {
     /**
-     * Given [100,1,2,3,4,5,6,7,8,9]
-     * At the end of i = 0
-     * 100 "bubbles" to the end of the list
-     * 100 swaps with each number until it reaches the end, this is i = 0.
-     * [1,2,3,4,5,6,7,8,9,100]
+     * Bubble sort: Given [10, 9, -1, -2]
+     * On the first iteration, 10 "bubbles to the end". On the second iteration, 9 "bubbles to the end". And so on.
      * @param nums
      */
     public static void bubbleSort(int[] nums) {
@@ -23,13 +19,4 @@ public class BubbleSort {
                 break;
         }
     }
-
-    public static void main(String[] args) {
-        int[] nums = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
-
-        System.out.println(Arrays.toString(nums));
-        System.out.println("------------------------------------------------------");
-        bubbleSort(nums);
-    }
-
 }

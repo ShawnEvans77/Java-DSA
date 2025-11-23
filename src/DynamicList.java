@@ -144,23 +144,4 @@ public class DynamicList<E> extends AbstractList<E> {
         }
     }
 
-
-    public static void main(String[] args) {
-        DynamicList<Integer> list = new DynamicList<>();
-
-        list.add(5);
-        list.add(7);
-        list.add(1, 500);
-        list.add(0, 20);
-
-        for (int x : list) {
-            System.out.println(x);
-        }
-
-        System.out.println("-------------------------------------------------------------------");
-
-        System.out.println(list);
-    }
-
- 
 }
